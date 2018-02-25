@@ -1,0 +1,145 @@
+<ion-header>
+  <ion-navbar>
+   <button ion-button menuToggle>
+      <ion-icon name="md-arrow-round-back"></ion-icon>
+    </button>
+    <ion-title class="hme_clss">Video</ion-title>
+<ion-buttons end>
+
+    <button class="stl_btn">
+     
+         <ion-icon name="mail" class="set_env"></ion-icon>
+    </button>
+
+</ion-buttons>
+
+ 
+  </ion-navbar>
+
+ <ion-toolbar class="sub_sttl">
+    <ion-grid>
+  <ion-row>
+    <ion-col col-6>
+      <h3 class="stn_dttl">Student details</h3>
+    </ion-col>
+
+    <ion-col col-6>
+      <div class="clos_vddo">
+       <span class="nnm_meeta">komal</span>
+     <div class="dtt_pc">
+      <img src="assets/images/pro_pc.png">
+       </div>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content style="width: 100%; float: left; background-image: url(../assets/images/video_bg.png); background-attachment: fixed; background-size: cover;">
+
+<ion-list>
+  <div class="cvr_rds">
+  <ion-item>
+    <ion-label fixed class="lft_nmme">From Date:</ion-label>
+    <ion-input class="rght_nmme" type="text" value="" placeholder="22/01/2018"></ion-input>
+  </ion-item>
+
+    <ion-item>
+    <ion-label fixed class="lft_nmme">To Date:</ion-label>
+    <ion-input class="rght_nmme" type="text" value="" placeholder="24/01/2018"></ion-input>
+  </ion-item>
+
+    <ion-item>
+     <ion-label fixed class="lft_nmme">Week:</ion-label>
+    <ion-input class="rght_nmme" type="text" value="" placeholder="week1"></ion-input>
+  </ion-item>
+  </div>
+    <button ion-button block class="sbnt_btn">Search</button>
+</ion-list>
+
+<div class="graph_calculate">
+    <div class="row">
+        <div class="col-md-6">
+          <div style="display: block;">
+          <canvas baseChart width="300" height="400"
+                      [datasets]="lineChartData"
+                      [labels]="lineChartLabels"
+                      [options]="lineChartOptions"
+                      [colors]="lineChartColors"
+                      [legend]="lineChartLegend"
+                      [chartType]="lineChartType"
+                      (chartHover)="chartHovered($event)"
+                      (chartClick)="chartClicked($event)"></canvas>
+          </div>
+        </div>
+      </div>
+  <!-- <img src="../assets/images/video_graph.png"> -->
+  <h4>Time Spent on Video's Detail</h4>
+</div>
+
+<div class="ttl_lgn">
+
+<ion-list>
+      <h4>Total login time</h4>
+  <div class="cvr_tme">
+
+      <ion-item>
+    <h3 item-start class="shw_tbleft">Week</h3>
+    <h3 item-end class="shw_tblrght">Week1</h3>
+  </ion-item>
+
+       <ion-item>
+    <h3 item-start class="shw_tbleft">Subject</h3>
+    <h3 item-end class="shw_tblrght">Science</h3>
+  </ion-item>
+
+       <ion-item>
+    <h3 item-start class="shw_tbleft">Video</h3>
+    <h3 item-end class="shw_tblrght">Body Parts</h3>
+  </ion-item>
+
+       <ion-item>
+    <h3 item-start class="shw_tbleft">Rating</h3>
+    <h3 item-end class="shw_tblrght">
+<ion-icon item-end name="star"></ion-icon>
+
+    </h3>
+  </ion-item>
+
+       <ion-item>
+    <h3 item-start class="shw_tbleft">Watch Start</h3>
+    <div item-end class="shw_tblrght">
+      <h3>jan 27, 2018</h3>
+       <span>09:34 PM</span>
+    </div>
+  </ion-item>
+
+           <ion-item>
+    <h3 item-start class="shw_tbleft">Watch End</h3>
+    <div item-end class="shw_tblrght">
+      <h3>jan 27, 2018</h3>
+       <span>10:34 PM</span>
+    </div>
+  </ion-item>
+
+       <ion-item>
+    <h3 item-start class="shw_tbleft">Spend Time</h3>
+    <h3 item-end class="shw_tblrght">00:06:00</h3>
+  </ion-item>
+
+       <ion-item>
+    <h3 item-start class="shw_tbleft">Actual Video Time</h3>
+    <h3 item-end class="shw_tblrght">00:06:46</h3>
+  </ion-item>
+
+       <ion-item>
+    <h3 item-start class="shw_tbleft">Status</h3>
+    <h3 item-end class="shw_tblrght">Active</h3>
+  </ion-item>
+
+  </div>
+</ion-list>
+</div>
+
+</ion-content>

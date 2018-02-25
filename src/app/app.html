@@ -1,0 +1,30 @@
+<ion-menu [content]="content">
+  <!--<ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>-->
+
+  <ion-content style="background:#112025; width:100%; float:left;">
+    <div class="usr_pic">
+      <div class="pic_crcle">
+        <img src="assets/images/pro_pc.png">
+      </div>
+       <span class="stnd_cls">Student Name</span>
+    </div>
+    <ion-list>
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)" class="bck_trns">
+         <ion-icon item-left [name]="p.icon"></ion-icon>
+        {{p.title}}
+      </button>
+      <button menuClose ion-item (click)="Logout()" class="bck_trns">
+        <ion-icon item-left name="ios-home-outline"></ion-icon>
+      Logout
+     </button>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

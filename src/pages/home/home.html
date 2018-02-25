@@ -1,0 +1,225 @@
+<ion-header>
+  <ion-navbar hideBackButton>
+    <button ion-button menuToggle style="display:block !important;color: #fff;">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    
+    <ion-title class="hme_clss">Home</ion-title>
+<ion-buttons end>
+    <button class="stl_btn" (click)="enrol_lnk()">
+      <img class="set_btn" src="assets/images/hdr_pls.png">
+    </button>
+
+    <button class="stl_btn">
+       <img class="set_btn" src="assets/images/hdr_pls2.png">
+    </button>
+
+</ion-buttons>
+  </ion-navbar>
+
+  <ion-toolbar class="sub_sttl">
+    <ion-grid>
+  <ion-row>
+    <ion-col col-6>
+      <h3 class="stn_dttl">Student details</h3>
+    </ion-col>
+
+    <ion-col col-6>
+     <div class="dtt_pc">
+      <img src="assets/images/pro_pc.png">
+       </div>
+
+    </ion-col>
+  </ion-row>
+</ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content style="width: 100%; float: left; background-image: url(../assets/images/video_bg.png); background-attachment: fixed; background-size: cover;">
+
+<ion-grid>
+  <ion-row>
+    <ion-col col-12>
+      <div class="cvr_lvl">
+        <div class="cvr_txxt">
+          <h4>Level</h4>
+        </div>
+        <div class="numbr_lvl">
+          <span>1</span>
+          </div>
+
+          <div class="cvr_txxt">
+          <h4>Current Status</h4>
+        </div>
+        <div class="numbr_lvl">
+          <span>Active</span>
+          </div>
+      </div>
+    </ion-col>
+
+     <ion-col col-12>
+      <div class="cvr_lvl">
+        <div class="cvr_txxt">
+          <h4>Child Name</h4>
+        </div>
+        <div class="numbr_lvl">
+          <span>David Smith</span>
+          </div>
+
+          <div class="cvr_txxt">
+          <h4>Joining Date</h4>
+        </div>
+        <div class="numbr_lvl">
+          <span>23-01-2018</span>
+          </div>
+      </div>
+    </ion-col>
+
+     <ion-col col-12>
+      <div class="cvr_lvl">
+        <div class="cvr_accmplsh">
+          <h4>Week Accomplished</h4>
+        </div>
+      </div>
+      
+    </ion-col>
+  </ion-row>
+
+   <ion-row>
+    <ion-col col-12>
+      <div class="hme_hdng">
+        <h4>login Time</h4>
+      </div>
+
+      <div class="cvr_lvl">
+        <div class="cvr_txxt">
+          <h4>Today</h4>
+        </div>
+
+         <div class="cvr_txxt1">
+          <h4>Yesterday</h4>
+        </div>
+
+        <div class="numbr_nmme">
+          <span>10:00am</span>
+          </div>
+
+        <div class="numbr_dte">
+          <span>11:00am</span>
+          </div>
+      </div>
+    </ion-col>
+  </ion-row>
+
+   <ion-row>
+    <ion-col col-12>
+      <div class="hme_hdng">
+        <h4>Last 7 Days login time</h4>
+      </div>
+
+      <div class="cvr_lvl">
+        <div class="twl_noon">
+          <h4>12:00 noon</h4>
+        </div>
+
+        <div class="noon_rght">
+           <h4>Today</h4>
+        </div>
+
+          <div class="twl_noon">
+          <h4>12:00 noon</h4>
+        </div>
+
+        <div class="noon_rght">
+           <h4>Today</h4>
+        </div>
+
+          <div class="twl_noon">
+          <h4>12:00 noon</h4>
+        </div>
+
+        <div class="noon_rght">
+           <h4>Today</h4>
+        </div>
+      </div>
+    </ion-col> 
+  </ion-row>
+
+   <ion-row>
+    <ion-col col-12>
+      <div class="hme_hdng">
+        <h4>Total login time</h4>
+      </div>
+
+      <div class="cvr_lvl">
+        <div class="twl_noon">
+          <h4>12:00 noon</h4>
+        </div>
+
+        <div class="noon_rght">
+           <h4>Today</h4>
+        </div>
+
+          <div class="twl_noon">
+          <h4>12:00 noon</h4>
+        </div>
+
+        <div class="noon_rght">
+           <h4>Today</h4>
+        </div>
+
+          <div class="twl_noon">
+          <h4>12:00 noon</h4>
+        </div>
+
+        <div class="noon_rght">
+           <h4>Today</h4>
+        </div>
+      </div>
+    </ion-col> 
+  </ion-row>
+
+     <ion-row>
+    <ion-col col-12>
+      <div class="hme_hdng">
+        <h4>Detail Peformance Report</h4>
+      </div>
+
+      <div class="cvr_lvl">
+       <div class="wtch_sctn" (click)="vdeo_lnk()">
+         <h3>Watch Video</h3>
+         <img src="../assets/images/wtch.png">
+       </div>
+
+        <div class="avg_sctn" (click)="avg_lnk()">
+         <h3>Average Mark</h3>
+         <img src="../assets/images/avrge.png">
+       </div>
+
+        <div class="tme_sctn" (click)="tme_lnk()">
+         <h3>Time Spend</h3>
+         <img src="../assets/images/clck.png">
+       </div>
+
+      </div>
+    </ion-col> 
+  </ion-row>
+
+  <ion-row>
+    <ion-col col-12>
+
+      <div class="cvr_lvl">
+       <div class="twl_ovrl">
+          <h4>Overall average marks</h4>
+        </div>
+
+        <div class="prcnt_rght">
+           <h4>0.00%</h4>
+        </div>
+
+      </div>
+    </ion-col> 
+  </ion-row>
+
+</ion-grid>
+</ion-content>

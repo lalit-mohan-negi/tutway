@@ -1,0 +1,29 @@
+page-spalsh {
+.upt_bg {
+    width: 100%;
+    float: left;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+}
+.logo_pc {
+    width: 160px;
+    height: 24vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.logo_pc img {
+    width: 100%;
+    height: auto;
+}
+}

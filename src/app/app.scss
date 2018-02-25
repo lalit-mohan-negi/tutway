@@ -1,0 +1,79 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+
+@font-face{
+font-family:opensans-regular;
+src:url('../assets/fonts/opensans-regular.woff2')
+}
+
+*{
+   font-family:opensans-regular;
+}
+
+
+.usr_pic{
+    width:100%;
+    float:left;
+    background: url('../assets/images/video_bg.png');
+    background-attachment: fixed;
+    background-size: cover;
+    height: 170px;
+}
+.pic_crcle {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin-bottom: 23px;
+}
+.pic_crcle img {
+    width: 100%;
+    float: left;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    left: 16px;
+    bottom: 0;
+    top: 45px;
+    margin: auto;
+    border-radius: 50px;
+    border: 2px solid #f2f2f2;
+}
+.stnd_cls {
+    width: 145px;
+    float: left;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+.bck_trns{
+    width: 100%;
+    float:left;
+    background:transparent;
+    color:#fff;
+    border-bottom: 1px solid #fff;
+}
+.bck_trns .label {
+    margin: 0;
+}
+.bck_trns ion-icon[item-left]{
+    margin: 0 !important;
+}
+.list-md .item-block .item-inner {
+    border-bottom: transparent;
+     margin-left: 11px !important;
+}

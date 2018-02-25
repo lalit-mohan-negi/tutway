@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title class="hme_clss">Watch video</ion-title>
+<ion-buttons end>
+</ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding style="width: 100%; float: left; background-image: url(assets/images/video_bg.png); background-attachment: fixed; background-size: cover;">
+    <!-- <button ion-button full (click)="startVideo()">Start Video</button>
+    <button ion-button full (click)="playVid()">Play Video</button> -->
+    
+    <video *ngFor="let vid of videos" poster="{{vid.videoimageName}}" id="myVideo" width="100%" (click)="startVideo(vid.id,vid.videoName)"></video> 
+    <!-- <video id="myVideo" width="320" height="176">
+      <source src="https://www.tutway.com/UploadedFiles/VideoMasterFiles/Video1.mp4" type="video/mp4">
+     
+    </video>
+    
+    <video width="320" height="240" controls id="video">
+      <source src="http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_30mb.mp4" type="video/mp4">
+      
+    </video> -->
+</ion-content>

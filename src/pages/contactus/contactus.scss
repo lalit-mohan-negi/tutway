@@ -1,0 +1,40 @@
+page-contactus {
+
+    button.stl_btn {
+        background: transparent;
+    }
+    .toolbar-background {
+        border-color: #102024 !important;
+        background: #102024 !important;
+    }
+    span.button-inner {
+        color: #f2f2f2;
+    }
+    .hme_clss .toolbar-title{
+        color:#fff;
+    }
+    .about_cntnt {
+       width: 88%;
+    float: left;
+    margin-left: 16px;
+    background: #fff;
+    border-radius: 8px;
+    margin-top: 15px;
+    }
+    .about_cntnt h3 {
+      width: 100%;
+    float: left;
+    color: #424242;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 16px;
+    }
+    .about_cntnt p {
+      width: 100%;
+    float: left;
+    padding: 0 16px;
+    font-size: 14px;
+    color: #424242;
+    margin-top: 0px;
+    }
+}

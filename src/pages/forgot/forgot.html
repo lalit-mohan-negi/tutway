@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Forgot password</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content style="width: 100%; height:100%; float: left; background-image: url(assets/images/bg_splash.jpg); background-attachment: fixed; background-size: cover;" padding="">
+<div class="backgrnd_clss">
+  <div class="upt_bg">
+    <div class="logo_pc">
+    <img src="assets/images/logo.png">
+    </div>
+
+  <ion-list>
+    <form [formGroup]="ForgotForm" (submit)='Signin(ForgotForm)'>
+      <ion-list>
+
+          <ion-item class="regs_prnt">
+                   <ion-input type="email" placeholder="Email" formControlName="email"></ion-input>
+                   <ion-icon name="contact" item-left></ion-icon>
+               </ion-item>
+               <p *ngIf="!isValid('username')" color="danger" padding-left>Invalid email.</p>
+       </ion-list>
+          <button ion-button block class="sbnt_btn" type="submit" [disabled]="!ForgotForm.valid">Continue</button>
+  </form>
+</ion-list>
+</div></div></ion-content>
+ 
